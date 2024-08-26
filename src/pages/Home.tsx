@@ -20,14 +20,18 @@ const Home: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-   <HeroSection />
-   <div className="text-center mt-12">
-        <h1 className="text-3xl font-bold mb-6">GYM BODY </h1>
+      <HeroSection />
+      <div className="text-center mt-12">
+        <h1 className="text-3xl font-bold mb-6">Sweat is just fat crying.</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {blogs.map(blog => (
           <div key={blog.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src={blog.image} className="w-full h-48 object-cover" alt={`Blog Post ${blog.id}`} />
+            <img
+              src={blog.image}
+              className="w-full h-48 object-contain" // Use object-contain to ensure the full image is visible
+              alt={`Blog Post ${blog.id}`}
+            />
           </div>
         ))}
       </div>
@@ -39,16 +43,27 @@ const Home: React.FC = () => {
             <img
               src="https://publish.purewow.net/wp-content/uploads/sites/2/2022/04/evolveyou-lower-body-workout-cat.jpg?resize=720%2C524.jpg"
               alt="Featured Image"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-contain" // Use object-contain to ensure the full image is visible
             />
           </div>
         </div>
         <div className="flex-1 bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-4">Description Section</h2>
-          <p className="text-gray-700">This section provides additional descriptions and insights about our blog posts, including summaries, highlights, and key takeaways from the content.</p>
-        </div>
+  <h2 className="text-2xl font-bold mb-4">Description Section</h2>
+  <p className="text-gray-700 mb-8">
+    Fitness is more than just a physical activity; it's a journey toward a stronger, more resilient version of yourself. Every drop of sweat, every early morning wake-up, and every rep you push through brings you closer to your goals. Embrace the challenge, for it is in the struggle that we find our true strength. Remember, the only bad workout is the one you didn't do. Stay motivated, stay focused, and let your determination transform every effort into a step toward greatness. Your future self will thank you for the hard work you put in today!
+  </p>
+  
+  <div className="mt-8">
+    <h3 className="text-xl font-semibold mb-2">Healthy Eating for Optimal Performance</h3>
+    <p className="text-gray-700">
+      Nutrition plays a crucial role in your fitness journey. Eating a balanced diet that includes lean proteins, complex carbohydrates, and healthy fats fuels your workouts and aids in recovery. Incorporate a variety of fruits and vegetables to ensure you get the essential vitamins and minerals needed to support your body's needs. Hydration is equally important; drink plenty of water throughout the day to keep your body functioning at its best. Remember, what you put into your body is just as important as the effort you put into your workouts.
+    </p>
+  </div>
+</div>
+
+
       </div>
-      <Services /> 
+      <Services />
     </div>
   );
 };
