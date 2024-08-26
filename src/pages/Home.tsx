@@ -20,9 +20,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <HeroSection />
-      <Services /> 
-      <h1 className="text-3xl font-bold mb-6 mt-12">Latest Blog Posts</h1>
+   <HeroSection />
+   <div className="text-center mt-12">
+        <h1 className="text-3xl font-bold mb-6">Latest Blog Posts</h1>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {blogs.map(blog => (
           <div key={blog.id} className="bg-white shadow-md rounded-lg overflow-hidden">
@@ -33,14 +34,24 @@ const Home: React.FC = () => {
       <div className="flex flex-col sm:flex-row mt-12 gap-6">
         <div className="flex-1 bg-gray-100 p-8 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Images Section</h2>
-          <p className="text-gray-700">This section showcases the latest blog post images. You can see a variety of images related to our blog content displayed in a grid above.</p>
+          <p className="text-gray-700 mb-4">This section showcases a featured image related to our blog content.</p>
+          <div className="relative w-full h-80">
+            <img
+              src="https://publish.purewow.net/wp-content/uploads/sites/2/2022/04/evolveyou-lower-body-workout-cat.jpg?resize=720%2C524.jpg"
+              alt="Featured Image"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
         </div>
         <div className="flex-1 bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-4">Description Section</h2>
           <p className="text-gray-700">This section provides additional descriptions and insights about our blog posts, including summaries, highlights, and key takeaways from the content.</p>
         </div>
       </div>
+      
+      <Services /> 
     </div>
+    
   );
 };
 
