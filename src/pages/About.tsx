@@ -34,9 +34,9 @@ const About = () => {
           {/* Team Member 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://pbs.twimg.com/profile_images/584578180041740288/WAzpLB-J_400x400.jpg"
               alt="Team Member 1"
-              className="w-full h-40 object-cover rounded-lg mb-4"
+              className="w-full h-auto object-contain rounded-lg mb-4"
             />
             <h4 className="text-xl font-semibold text-gray-800">John Doe</h4>
             <p className="text-gray-600">Lead Trainer</p>
@@ -44,9 +44,9 @@ const About = () => {
           {/* Team Member 2 */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://pbs.twimg.com/media/EboJBRbWkAMTgF1.png"
               alt="Team Member 2"
-              className="w-full h-40 object-cover rounded-lg mb-4"
+              className="w-full h-auto object-contain rounded-lg mb-4"
             />
             <h4 className="text-xl font-semibold text-gray-800">Jane Smith</h4>
             <p className="text-gray-600">Nutrition Specialist</p>
@@ -54,9 +54,9 @@ const About = () => {
           {/* Team Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://c8.alamy.com/compfr/ga85c7/michael-johnson-athlete-usa-ga85c7.jpg"
               alt="Team Member 3"
-              className="w-full h-40 object-cover rounded-lg mb-4"
+              className="w-full h-auto object-contain rounded-lg mb-4"
             />
             <h4 className="text-xl font-semibold text-gray-800">Michael Johnson</h4>
             <p className="text-gray-600">Fitness Coach</p>
