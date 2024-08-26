@@ -22,7 +22,7 @@ const Home: React.FC = () => {
     <div className="container mx-auto px-4 py-8">
    <HeroSection />
    <div className="text-center mt-12">
-        <h1 className="text-3xl font-bold mb-6">Latest Blog Posts</h1>
+        <h1 className="text-3xl font-bold mb-6">GYM BODY </h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {blogs.map(blog => (
@@ -48,10 +48,8 @@ const Home: React.FC = () => {
           <p className="text-gray-700">This section provides additional descriptions and insights about our blog posts, including summaries, highlights, and key takeaways from the content.</p>
         </div>
       </div>
-      
       <Services /> 
     </div>
-    
   );
 };
 
