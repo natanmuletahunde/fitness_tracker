@@ -46,9 +46,9 @@ const ServicesPage = () => {
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h2>
         <p className="text-gray-700">Have questions about our services? Feel free to reach out via phone or email, or visit our office during business hours.</p>
         <div className="mt-6">
-          <p className="text-gray-600">Phone: (123) 456-7890</p>
-          <p className="text-gray-600">Email: services@example.com</p>
-          <p className="text-gray-600">Address: 123 Service Lane, City, State, 12345</p>
+          <p className="text-gray-600">Phone: 0900357560</p>
+          <p className="text-gray-600">Email: natanmuleta911@gmail.com</p>
+          <p className="text-gray-600">Address: 123 Service Lane, AMERICA</p>
         </div>
       </section>
     </div>
