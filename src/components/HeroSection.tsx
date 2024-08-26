@@ -1,3 +1,4 @@
+// src/components/HeroSection.tsx
 import React from 'react';
 
 const HeroSection = () => {
